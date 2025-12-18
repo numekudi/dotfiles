@@ -46,3 +46,9 @@ NEVER use generic AI-generated aesthetics like overused font families (Inter, Ro
 Interpret creatively and make unexpected choices that feel genuinely designed for the context. No design should be the same. Vary between light and dark themes, different fonts, different aesthetics. NEVER converge on common choices (Space Grotesk, for example) across generations.
 
 **IMPORTANT**: Match implementation complexity to the aesthetic vision. Maximalist designs need elaborate code with extensive animations and effects. Minimalist or refined designs need restraint, precision, and careful attention to spacing, typography, and subtle details. Elegance comes from executing the vision well.
+
+## About the Tasks
+- **Avoid decorative comments**: Do not use stylized or unnecessary ornamentation in code comments.
+- **Concise reporting**: Use bullet points to keep progress reports brief and clear.
+- **Proactive suggestions**: If a better solution or best practice exists beyond the user's specific instructions, prioritize and propose that approach.
+- **Code limits**: Aim to keep individual files under 500 lines of code.
