@@ -3,5 +3,5 @@
 ## Installation
 
 ```
-stow -v copilot git
+stow -v <dir>
 ```
