@@ -56,6 +56,7 @@ Interpret creatively and make unexpected choices that feel genuinely designed fo
 - **Concise reporting**: Use bullet points to keep progress reports brief and clear.
 - **Proactive suggestions**: If a better solution or best practice exists beyond the user's specific instructions, prioritize and propose that approach.
 - **Code limits**: Aim to keep individual files under 500 lines of code.
+- **Type Safety**: Do not use 'any' type. Always prefer strict typing and type inference.
 
 ## Operational Notes
 
