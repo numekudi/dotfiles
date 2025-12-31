@@ -57,6 +57,7 @@ Interpret creatively and make unexpected choices that feel genuinely designed fo
 - **Proactive suggestions**: If a better solution or best practice exists beyond the user's specific instructions, prioritize and propose that approach.
 - **Code limits**: Aim to keep individual files under 500 lines of code.
 - **Type Safety**: Do not use 'any' type. Always prefer strict typing and type inference.
+- **Single Source of Truth**: Ensure that all data and state are managed in a single source of truth.
 
 ## Operational Notes
 
