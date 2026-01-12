@@ -51,14 +51,13 @@ Interpret creatively and make unexpected choices that feel genuinely designed fo
 **IMPORTANT**: Match implementation complexity to the aesthetic vision. Maximalist designs need elaborate code with extensive animations and effects. Minimalist or refined designs need restraint, precision, and careful attention to spacing, typography, and subtle details. Elegance comes from executing the vision well.
 
 ## About the Tasks
-
 - **Avoid decorative comments**: Do not use stylized or unnecessary ornamentation in code comments.
 - **Concise reporting**: Use bullet points to keep progress reports brief and clear.
 - **Proactive suggestions**: If a better solution or best practice exists beyond the user's specific instructions, prioritize and propose that approach.
-- **Code limits**: Aim to keep individual files under 500 lines of code.
+- **Code limits**: Aim to keep individual files under 300 lines of code.
 - **Type Safety**: Do not use 'any' type. Always prefer strict typing and type inference.
 - **Single Source of Truth**: Ensure that all data and state are managed in a single source of truth.
-
+- **Code Patching**: Partial code modifications can fail to preserve matching parentheses, so when making changes, rewrite the entire file.
 ## Operational Notes
 
 - Fallback handling is not necessary; prefer errors to surface rather than being hidden.
