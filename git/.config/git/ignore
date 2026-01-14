@@ -84,7 +84,6 @@ build/
 # -------------------------
 # Build / CI / tooling
 # -------------------------
-*.lock
 *.cache
 *.tmp
 *.temp
