@@ -1,0 +1,9 @@
+[gcloud]
+disabled = false
+format = 'on [$symbol$account(@$domain)(\($project\))]($style) '
+
+[git_branch]
+symbol = "🌱 "
+
+[git_status]
+style = "bg:red"

@@ -1,0 +1,7 @@
+eval "$(starship init bash)"
+
+
+# .bashrc
+# if [ -f ~/.bash_custom ]; then
+#    source ~/.bash_custom
+# fi
