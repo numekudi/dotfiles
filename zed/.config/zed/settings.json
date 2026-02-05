@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "vim": {
+    "toggle_relative_line_numbers": true
+  },
   "buffer_line_height": "comfortable",
   "buffer_font_family": ".ZedMono",
   "agent": {
@@ -18,7 +21,7 @@
     "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-sonnet-4"
+      "model": "gpt-5-codex"
     }
   },
   "telemetry": {
