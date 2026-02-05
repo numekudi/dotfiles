@@ -18,4 +18,16 @@
       "j k": "vim::NormalBefore",
     },
   },
+  {
+    "context": "!Terminal",
+    "bindings": {
+      "ctrl-shift-c ctrl-shift-c": "collab_panel::ToggleFocus",
+    },
+  },
+  {
+    "context": "!Terminal",
+    "bindings": {
+      "ctrl-shift-c": "editor::Copy",
+    },
+  },
 ]
