@@ -1,9 +1,8 @@
 [gcloud]
 disabled = false
-format = 'on [$symbol$account(@$domain)(\($project\))]($style) '
+format = '[$symbol($project)]($style)'
 
 [git_branch]
-symbol = "🌱 "
-
-[git_status]
-style = "bg:red"
+truncation_length = 4
+truncation_symbol = ''
+format = '[$symbol($branch)]($style)'
