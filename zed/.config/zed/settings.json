@@ -7,12 +7,25 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "which_key": {
+    "enabled": true
+  },
+  "title_bar": {
+    "show_branch_icon": false
+  },
+  "project_panel": {
+    "hide_hidden": false,
+    "hide_root": true,
+    "bold_folder_labels": false,
+    "auto_fold_dirs": false
+  },
   "vim": {
     "toggle_relative_line_numbers": true
   },
   "buffer_line_height": "comfortable",
   "buffer_font_family": ".ZedMono",
   "agent": {
+    "button": true,
     "always_allow_tool_actions": true,
     "inline_assistant_model": {
       "provider": "copilot_chat",
