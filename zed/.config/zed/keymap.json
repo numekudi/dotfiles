@@ -30,4 +30,9 @@
       "ctrl-shift-c": "editor::Copy",
     },
   },
+  {
+    "bindings": {
+      "ctrl-s": "workspace::Save"
+    }
+  }
 ]
