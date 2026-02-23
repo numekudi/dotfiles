@@ -2,35 +2,66 @@
 
 Personal configuration files for development environment.
 
-## Installation
-
-Install all dotfiles:
-
-```bash
-./install.sh
-```
-
 ## Requirements
 
 - [GNU Stow](https://www.gnu.org/software/stow/)
+- [uv](https://docs.astral.sh/uv/) (Python 3.13)
 
-Install stow:
 ```bash
 # macOS
 brew install stow
+brew install uv
 
 # Linux
 sudo apt install stow
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-## Manual Installation
+## Installation
 
-To install specific packages:
+```bash
+git clone <this-repo> ~/dotfiles
+cd ~/dotfiles
+
+# Symlink dotfiles
+./install.sh
+
+# Install Python dependencies (for CLI tools)
+uv sync
+```
+
+## CLI
+
+Python製のツール群は `dotfiles` コマンドで使用できます。
+
+```bash
+uv run nagent --help
+```
+
+### image-generation
+
+Gemini APIを使って画像を生成します。事前に Vertex AI の認証が必要です。
+
+```bash
+uv run nagent image-generation <prompt> <output_path> [options]
+```
+
+| オプション | デフォルト | 説明 |
+|---|---|---|
+| `--reference-image` | — | 参考画像のパス |
+| `--model` | `gemini-3-pro-image-preview` | モデル名 |
+| `--temperature` | `0.2` | 温度パラメータ |
+| `--image-size` | `1K` | 画像サイズ |
+| `--aspect-ratio` | `1:1` | アスペクト比 |
+
+## Manual Stow
+
+特定のパッケージだけ適用する場合:
 
 ```bash
 stow git
 stow zsh
-stow starship
+stow nvim
 ```
 
 ## Uninstalling
