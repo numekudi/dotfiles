@@ -10,7 +10,7 @@ dependencies = [
 ]
 
 [project.scripts]
-nagent = "src.cli:app"
+nskill = "src.cli:app"
 
 [tool.setuptools.packages.find]
 where = ["."]

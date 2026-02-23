@@ -35,7 +35,7 @@ uv sync
 Python製のツール群は `dotfiles` コマンドで使用できます。
 
 ```bash
-uv run nagent --help
+uv run nskill --help
 ```
 
 ### image-generation
@@ -43,7 +43,7 @@ uv run nagent --help
 Gemini APIを使って画像を生成します。事前に Vertex AI の認証が必要です。
 
 ```bash
-uv run nagent image-generation <prompt> <output_path> [options]
+uv run nskill image-generation <prompt> <output_path> [options]
 ```
 
 | オプション | デフォルト | 説明 |
