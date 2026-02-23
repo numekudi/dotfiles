@@ -10,7 +10,7 @@ dependencies = [
 ]
 
 [project.scripts]
-nskill = "src.cli:app"
+nskills = "src.cli:app"
 
 [tool.setuptools.packages.find]
 where = ["."]

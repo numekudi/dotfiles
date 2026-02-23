@@ -32,10 +32,10 @@ uv sync
 
 ## CLI
 
-Python製のツール群は `dotfiles` コマンドで使用できます。
+Python製のツール群は `nskills` コマンドで使用できます。
 
 ```bash
-uv run nskill --help
+uv run nskills --help
 ```
 
 ### image-generation
@@ -43,7 +43,7 @@ uv run nskill --help
 Gemini APIを使って画像を生成します。事前に Vertex AI の認証が必要です。
 
 ```bash
-uv run nskill image-generation <prompt> <output_path> [options]
+uv run nskills image-generation <prompt> <output_path> [options]
 ```
 
 | オプション | デフォルト | 説明 |
