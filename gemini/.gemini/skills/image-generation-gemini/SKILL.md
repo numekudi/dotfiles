@@ -5,7 +5,7 @@ description: Generates an image based on the user's input.
 
 ## usage
 ```sh
-uv run nskills image-generation <prompt> <output_path> [options]
+nskills image-generation <prompt> <output_path> [options]
 ```
 ### required arguments
 

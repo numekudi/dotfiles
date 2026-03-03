@@ -26,4 +26,6 @@ for dir in */; do
     fi
 done
 
+uv tool install .
+
 echo "Done! Dotfiles installed successfully."
