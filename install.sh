@@ -26,6 +26,6 @@ for dir in */; do
     fi
 done
 
-uv tool install .
+uv tool install nskills
 
 echo "Done! Dotfiles installed successfully."
