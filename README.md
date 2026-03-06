@@ -30,30 +30,6 @@ cd ~/dotfiles
 uv sync
 ```
 
-## CLI
-
-Python製のツール群は `nskills` コマンドで使用できます。
-
-```bash
-uv run nskills --help
-```
-
-### image-generation
-
-Gemini APIを使って画像を生成します。事前に Vertex AI の認証が必要です。
-
-```bash
-uv run nskills image-generation <prompt> <output_path> [options]
-```
-
-| オプション | デフォルト | 説明 |
-|---|---|---|
-| `--reference-image` | — | 参考画像のパス |
-| `--model` | `gemini-3-pro-image-preview` | モデル名 |
-| `--temperature` | `0.2` | 温度パラメータ |
-| `--image-size` | `1K` | 画像サイズ |
-| `--aspect-ratio` | `1:1` | アスペクト比 |
-
 ## Manual Stow
 
 特定のパッケージだけ適用する場合:
