@@ -26,8 +26,10 @@
   "buffer_line_height": "comfortable",
   "buffer_font_family": ".ZedMono",
   "agent": {
+    "tool_permissions": {
+      "default": "allow"
+    },
     "button": true,
-    "always_allow_tool_actions": true,
     "inline_assistant_model": {
       "provider": "copilot_chat",
       "model": "gpt-5-mini"
