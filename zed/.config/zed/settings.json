@@ -32,7 +32,7 @@
     "button": true,
     "inline_assistant_model": {
       "provider": "copilot_chat",
-      "model": "gpt-5-mini"
+      "model": "claude-opus-4.6"
     },
     "default_profile": "write",
     "default_model": {
