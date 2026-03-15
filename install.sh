@@ -11,19 +11,14 @@ if ! command -v stow >/dev/null 2>&1; then
     exit 1
 fi
 
-# Get script directory
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-cd "$SCRIPT_DIR"
-
 # Install all dotfiles
 echo "Installing dotfiles..."
 
-for dir in */; do
-    if [ -d "$dir" ] && [ "$dir" != ".git/" ]; then
-        package="${dir%/}"
-        echo "Installing $package"
-        stow "$package"
-    fi
+packages=("git" "zsh" "nvim" "bash" "agents" "copilot" "gemini" "starship" "zed")
+
+for package in "${packages[@]}"; do
+    echo "Installing $package"
+    stow "$package"
 done
 
 uv tool install nskills
