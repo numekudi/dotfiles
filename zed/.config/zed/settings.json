@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "ui_font_family": "Hack Nerd Font",
   "agent_servers": {
     "github-copilot-cli": {
       "type": "registry"
@@ -32,7 +33,7 @@
     "toggle_relative_line_numbers": true
   },
   "buffer_line_height": "comfortable",
-  "buffer_font_family": ".ZedMono",
+  "buffer_font_family": "Hack Nerd Font",
   "agent": {
     "tool_permissions": {
       "default": "allow"
