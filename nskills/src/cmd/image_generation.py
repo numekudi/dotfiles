@@ -43,8 +43,7 @@ def generate(
     if output.exists():
         typer.echo(f"既に存在するためスキップします: {output}")
         return
-    else:
-        client = genai.Client(vertexai=True)
+    client = genai.Client(vertexai=True)
     generate_content_config = types.GenerateContentConfig(
         response_modalities=["IMAGE", "TEXT"],
         temperature=temperature,
