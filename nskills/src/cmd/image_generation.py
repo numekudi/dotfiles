@@ -43,8 +43,6 @@ def generate(
     if output.exists():
         typer.echo(f"既に存在するためスキップします: {output}")
         return
-    if os.environ.get("GEMINI_API_KEY"):
-        client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
     else:
         client = genai.Client(vertexai=True)
     generate_content_config = types.GenerateContentConfig(
