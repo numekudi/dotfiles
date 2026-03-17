@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 from typing import Annotated, Optional
 
@@ -27,7 +28,8 @@ def generate(
     prompt: Annotated[str, typer.Argument(help="画像生成のプロンプト")],
     output: Annotated[Path, typer.Argument(help="出力画像のパス")],
     reference_image: Annotated[
-        Optional[Path], typer.Option("--reference-image", help="参考画像のパス (省略可)")
+        Optional[Path],
+        typer.Option("--reference-image", help="参考画像のパス (省略可)"),
     ] = None,
     model: Annotated[
         str, typer.Option(help="使用するモデル名")
@@ -41,12 +43,16 @@ def generate(
     if output.exists():
         typer.echo(f"既に存在するためスキップします: {output}")
         return
-
-    client = genai.Client(vertexai=True)
+    if os.environ.get("GEMINI_API_KEY"):
+        client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+    else:
+        client = genai.Client(vertexai=True)
     generate_content_config = types.GenerateContentConfig(
         response_modalities=["IMAGE", "TEXT"],
         temperature=temperature,
-        image_config=types.ImageConfig(image_size=image_size, aspect_ratio=aspect_ratio),
+        image_config=types.ImageConfig(
+            image_size=image_size, aspect_ratio=aspect_ratio
+        ),
         thinking_config=types.ThinkingConfig(thinking_budget=0),
     )
 

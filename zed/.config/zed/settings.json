@@ -10,54 +10,54 @@
   "ui_font_family": "Hack Nerd Font",
   "agent_servers": {
     "github-copilot-cli": {
-      "type": "registry"
+      "type": "registry",
     },
     "opencode": {
-      "type": "registry"
-    }
+      "type": "registry",
+    },
   },
   "diff_view_style": "unified",
   "which_key": {
-    "enabled": true
+    "enabled": true,
   },
   "title_bar": {
-    "show_branch_icon": false
+    "show_branch_icon": false,
   },
   "project_panel": {
     "hide_hidden": false,
     "hide_root": true,
     "bold_folder_labels": false,
-    "auto_fold_dirs": false
+    "auto_fold_dirs": false,
   },
   "vim": {
-    "toggle_relative_line_numbers": true
+    "toggle_relative_line_numbers": true,
   },
   "buffer_line_height": "comfortable",
   "buffer_font_family": "Hack Nerd Font",
   "agent": {
     "tool_permissions": {
-      "default": "allow"
+      "default": "allow",
     },
     "button": true,
     "inline_assistant_model": {
       "provider": "copilot_chat",
-      "model": "claude-opus-4.6"
+      "model": "claude-opus-4.6",
     },
     "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-sonnet-4.6"
-    }
+      "model": "claude-sonnet-4.6",
+    },
   },
   "telemetry": {
-    "metrics": false
+    "metrics": false,
   },
   "vim_mode": true,
   "ui_font_size": 16,
   "buffer_font_size": 15,
   "buffer_font_features": {
     "liga": false,
-    "calt": false
+    "calt": false,
   },
-  "theme": "Ayu Dark"
+  "theme": "Ayu Dark",
 }
