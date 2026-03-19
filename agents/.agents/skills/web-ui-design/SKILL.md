@@ -18,3 +18,14 @@ description: Guide for designing user interfaces.
 ## maintainability
 - use CSS variables for color and spacing values to make it easy to update them across the interface.
 - Don't repeat yourself (DRY) — define shared styles and components in reusable modules.
+
+## Minimalism
+- Eliminate Redundant Labels: Do not include section headers or labels for content that is self-explanatory. If the data's format (e.g., a percentage, a name, or a comparison) clearly communicates its purpose, omit the descriptive text.
+
+- Whitespace as Hierarchy: Use generous, deliberate whitespace to create visual grouping and separation instead of lines, borders, or labels. Let the layout breathe to guide the user's eye naturally to the most important information.
+
+- Purposeful Typography: Rely on font weight, size, and color (within OKLCH constraints) to establish information hierarchy. Avoid using "decorative" English or sub-captions that do not provide functional value.
+
+- Single-Task Focus: Each view or component should serve one primary intent. Remove any secondary elements that do not directly support the user's current goal to minimize cognitive load.
+
+- Functional Essentials Only: Every pixel must earn its place. If an element can be removed without changing the user's understanding of the interface, it must be removed.
