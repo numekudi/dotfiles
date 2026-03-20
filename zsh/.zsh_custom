@@ -1,5 +1,5 @@
 eval "$(starship init zsh)"
-
+alias copilot="copilot --disable-builtin-mcps"
 
 # .zshrc
 # if [ -f ~/.zsh_custom ]; then
