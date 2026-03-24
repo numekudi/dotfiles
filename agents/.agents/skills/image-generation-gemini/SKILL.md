@@ -1,5 +1,5 @@
 ---
-name: Image Generation Skill
+name: image-generation
 description: Generates an image based on the user's input.
 ---
 
