@@ -1,6 +1,6 @@
 ---
 name: web-ui-design
-description: Guide for designing user interfaces.
+description: Guide for designing user interfaces. You must use this skill when you create HTML, JSX/TSX, Native GUI.
 ---
 ## Prohibited Practices
 

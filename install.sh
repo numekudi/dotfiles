@@ -23,4 +23,15 @@ done
 
 uv tool install nskills
 
+# Create skills symlinks
+DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+echo "Creating skills symlinks..."
+for tool in claude copilot gemini; do
+    hidden_dir="$DOTFILES_DIR/$tool/.$tool"
+    if [ -d "$hidden_dir" ]; then
+        ln -sfn "../../agents/.agents/skills" "$hidden_dir/skills"
+        echo "  $tool/.${tool}/skills -> agents/.agents/skills"
+    fi
+done
+
 echo "Done! Dotfiles installed successfully."
