@@ -1,5 +1,10 @@
 eval "$(starship init bash)"
 alias copilot="copilot --disable-builtin-mcps"
+alias claude="claude --dangerously-skip-permissions"
+alias l="ls"
+alias ll="ls -l"
+alias la="ls -a"
+alias lla="ls -la"
 
 
 # .bashrc
