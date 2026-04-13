@@ -7,8 +7,8 @@ alias la="ls -a"
 alias lla="ls -la"
 
 
-if [ -d /Volumes/SSD250 ]; then
-    export TMPDIR=/Volumes/SSD250
+if [ -d /Volumes/SSD250/TMPDIR ]; then
+    export TMPDIR=/Volumes/SSD250/TMPDIR
 fi
 
 
