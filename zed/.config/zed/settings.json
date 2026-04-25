@@ -7,6 +7,18 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "edit_predictions": {
+    "provider": "copilot",
+  },
   "ui_font_family": "Hack Nerd Font",
   "agent_servers": {
     "github-copilot-cli": {
@@ -16,14 +28,13 @@
       "type": "registry",
     },
   },
-  "diff_view_style": "unified",
+  "diff_view_style": "split",
   "which_key": {
     "enabled": true,
   },
-  "title_bar": {
-    "show_branch_icon": false,
-  },
+  "title_bar": {},
   "project_panel": {
+    "dock": "left",
     "hide_hidden": false,
     "hide_root": true,
     "bold_folder_labels": false,
@@ -35,6 +46,8 @@
   "buffer_line_height": "comfortable",
   "buffer_font_family": "Hack Nerd Font",
   "agent": {
+    "sidebar_side": "right",
+    "dock": "right",
     "tool_permissions": {
       "default": "allow",
     },
