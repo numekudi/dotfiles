@@ -1,0 +1,7 @@
+[gcloud]
+disabled = false
+format = '[$symbol($project)]($style) '
+
+[git_branch]
+truncation_length = 4
+format = '[$symbol($branch)]($style) '
