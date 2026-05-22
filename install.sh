@@ -21,7 +21,6 @@ for package in "${packages[@]}"; do
     stow "$package"
 done
 
-uv tool install nskills
 
 # Create skills symlinks
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
