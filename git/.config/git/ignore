@@ -147,3 +147,5 @@ aws-credentials
 # Optional: Ensure you don't accidentally ignore repo-specific files
 # -------------------------
 .playwright-cli
+
+**/.claude/settings.local.json

@@ -1,7 +1,3 @@
----
-name: coding
-description: Guide for coding
----
 you should write code that is:
 
 - typesafe code
