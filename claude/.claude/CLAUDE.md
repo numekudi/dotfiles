@@ -7,9 +7,12 @@ you should write code that is:
 
 ## do nots
 
-### fallback codes
-Fallback code is makeshift and not a fundamental solution. 
-Things that should break due to changes ought to break. This also applies to type safety; one should not rely on any or unknown.
+### fallback codes (code-level only)
+This rule is about CODE, not product/content design.
+Fallback code — silently swallowing errors, or leaving dead/legacy code paths around "just in case" — is makeshift, not a fundamental solution.
+Things that should break due to changes ought to break (fail fast and loud). This also applies to type safety; do not rely on `any` or `unknown`.
+
+Scope note: this does NOT restrict content/data strategies. A fully-verified "evergreen"/generic default used as graceful degradation (lowering specificity, not faking data) is a legitimate design, not a forbidden fallback.
 
 
 ### Memories
