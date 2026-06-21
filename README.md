@@ -5,6 +5,12 @@ Personal configuration files for development environment.
 ## Requirements
 
 - [GNU Stow](https://www.gnu.org/software/stow/)
+- tmux
+- Clipboard provider for tmux copy integration:
+  - Linux X11: `xclip` or `xsel`
+  - Linux Wayland: `wl-copy`
+  - macOS: `pbcopy`
+  - WSL: `clip.exe`
 
 ```bash
 # macOS
@@ -33,6 +39,7 @@ cd ~/dotfiles
 stow git
 stow zsh
 stow nvim
+stow tmux
 ```
 
 ## Uninstalling
