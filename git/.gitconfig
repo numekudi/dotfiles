@@ -3,4 +3,24 @@
 [user]
 	email = numekudi@primitive-ojisan.com
 	name = n
-
+[alias]
+	# Show the current branch and concise working tree state.
+	st = status --short --branch
+	# Common porcelain shorthands for daily branch and commit work.
+	sw = switch
+	co = checkout
+	br = branch
+	ci = commit
+	cm = commit -m
+	ca = commit --amend
+	# Inspect recent history with branch and tag decorations.
+	l = log --oneline --decorate -n 20
+	lg = log --graph --oneline --decorate --all
+	last = log -1 --stat
+	# Compare unstaged and staged changes explicitly.
+	df = diff
+	dc = diff --cached
+	# Move paths out of the index without touching their working tree content.
+	unstage = restore --staged
+	# List configured aliases from the effective Git config.
+	aliases = config --get-regexp ^alias\\.
