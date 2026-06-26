@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "icon_theme": "Zed (Default)",
   "disable_ai": false,
   "cli_default_open_behavior": "new_window",
   "outline_panel": {
@@ -16,6 +17,7 @@
     "dock": "left",
   },
   "git_panel": {
+    "tree_view": true,
     "dock": "left",
   },
   "edit_predictions": {
@@ -73,5 +75,9 @@
     "liga": false,
     "calt": false,
   },
-  "theme": "Ayu Dark",
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Ayu Dark"
+  },
 }
