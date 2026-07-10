@@ -6,49 +6,49 @@
 // To see the default key bindings run `zed: open default keymap`
 // from the command palette.
 [
-    {
-        "context": "Editor && vim_mode == insert",
-        "bindings": {
-            "j k": "vim::NormalBefore"
-        }
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j k": "vim::NormalBefore",
     },
-    {
-        "context": "!Terminal",
-        "bindings": {
-            "ctrl-shift-c ctrl-shift-c": "collab_panel::ToggleFocus"
-        }
+  },
+  {
+    "context": "!Terminal",
+    "bindings": {
+      "ctrl-shift-c ctrl-shift-c": "collab_panel::ToggleFocus",
     },
-    {
-        "context": "!Terminal",
-        "bindings": {
-            "ctrl-shift-c": "editor::Copy"
-        }
+  },
+  {
+    "context": "!Terminal",
+    "bindings": {
+      "ctrl-shift-c": "editor::Copy",
     },
-    {
-        "context": "vim_mode != insert",
-        "bindings": {
-            "ctrl-s": "workspace::Save"
-        }
+  },
+  {
+    "context": "vim_mode != insert",
+    "bindings": {
+      "ctrl-s": "workspace::Save",
     },
-    {
-        "context": "Editor && vim_mode == normal",
-        "bindings": {
-            "space r n": "editor::Rename",
-            "space c a": "editor::ToggleCodeActions",
-            "space f": "editor::Format"
-        }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space r n": "editor::Rename",
+      "space c a": "editor::ToggleCodeActions",
+      "space f": "editor::Format",
     },
-    {
-        "context": "Editor && (vim_mode == normal || vim_mode == visual)",
-        "bindings": {
-            "shift-h": "vim::StartOfLine",
-            "shift-l": "vim::EndOfLine"
-        }
+  },
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual)",
+    "bindings": {
+      "shift-h": "vim::StartOfLine",
+      "shift-l": "vim::EndOfLine",
     },
-    {
-        "context": "VimControl && !menu",
-        "unbind": {
-            "ctrl-j": "vim::Down"
-        }
-    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "unbind": {
+      "ctrl-j": "vim::Down",
+    },
+  },
 ]
