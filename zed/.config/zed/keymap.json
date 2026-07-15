@@ -51,4 +51,11 @@
       "ctrl-j": "vim::Down",
     },
   },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "d n": "editor::GoToHunk",
+      "d shift-n": "editor::GoToPreviousHunk",
+    }
+  }
 ]
