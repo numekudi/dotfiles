@@ -8,6 +8,13 @@ return {
     opts = {
       style = "night", -- "storm" | "night" | "moon" | "day"
       transparent = false,
+      -- 斜体（イタリック）を無効化する。function や comment などがイタリックになるのを防ぐ
+      styles = {
+        comments = { italic = false },
+        keywords = { italic = false },
+        functions = {},
+        variables = {},
+      },
     },
     config = function(_, opts)
       require("tokyonight").setup(opts)

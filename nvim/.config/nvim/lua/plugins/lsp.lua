@@ -45,15 +45,17 @@ return {
 				end,
 			})
 
-			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "pyright", "vtsls" },
-				automatic_installation = false,
-				handlers = {
-					function(server_name)
-						lspconfig[server_name].setup({ capabilities = capabilities })
-					end,
-				},
-			})
-		end,
-	},
+      require("mason-lspconfig").setup({
+        -- vtsls bundles its own TypeScript, so no global/per-project `typescript`
+        -- install is needed (ts_ls required an external tsserver and failed to start).
+        ensure_installed = { "lua_ls", "vtsls", "pyright" },
+        automatic_installation = true,
+        handlers = {
+          function(server_name)
+            lspconfig[server_name].setup({ capabilities = capabilities })
+          end,
+        },
+      })
+    end,
+  },
 }
