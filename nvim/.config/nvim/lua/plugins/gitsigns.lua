@@ -4,13 +4,15 @@ return {
     event = { "BufReadPre", "BufNewFile" },
     opts = {
       signs = {
-        add          = { text = "▎" },
-        change       = { text = "▎" },
-        delete       = { text = "" },
-        topdelete    = { text = "" },
-        changedelete = { text = "▎" },
-        untracked    = { text = "▎" },
+        add          = { text = '┃' },
+        change       = { text = '┃' },
+        delete       = { text = '_' },
+        topdelete    = { text = '‾' },
+        changedelete = { text = '~' },
+        untracked    = { text = '┆' },
       },
+      -- サイン列の色を Git の意味に合わせて固定する
+      -- Added=緑 / Modified(change)=黄 / Deleted=赤
       on_attach = function(bufnr)
         local gs = package.loaded.gitsigns
         local map = function(mode, keys, func, desc)
@@ -20,7 +22,8 @@ return {
         -- Navigation (Zed: ]c / [c)
         map("n", "]c", gs.next_hunk, "Next Change")
         map("n", "[c", gs.prev_hunk, "Prev Change")
-
+        map("n", "dn", gs.next_hunk, "Next Change")
+        map("n", "dN", gs.prev_hunk, "Prev Change")
         -- Expand diff hunk (Zed: do)
         map("n", "do", gs.preview_hunk, "Expand Diff Hunk")
 
@@ -54,5 +57,22 @@ return {
         map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>", "Select Hunk")
       end,
     },
+    config = function(_, opts)
+      require("gitsigns").setup(opts)
+
+      -- gitsigns のサイン色を明示指定する
+      -- 既定ではカラースキームの Diff 系にリンクされ色が意図とずれるため上書きする
+      local function set_signs_colors()
+        vim.api.nvim_set_hl(0, "GitSignsAdd", { fg = "#00b04f" })    -- Added: 緑
+        vim.api.nvim_set_hl(0, "GitSignsChange", { fg = "#e0af68" })  -- Modified: 黄
+        vim.api.nvim_set_hl(0, "GitSignsDelete", { fg = "#f7768e" })  -- Deleted: 赤
+      end
+
+      set_signs_colors()
+      -- カラースキーム切り替え時にハイライトが再定義され色が戻るため、その都度適用する
+      vim.api.nvim_create_autocmd("ColorScheme", {
+        callback = set_signs_colors,
+      })
+    end,
   },
 }
