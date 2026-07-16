@@ -32,7 +32,7 @@ vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 vim.keymap.set({ "n", "i", "v" }, "<C-s>", "<cmd>w<CR><Esc>", { desc = "Save" })
 vim.keymap.set({ "n", "v" }, "H", "^", { desc = "Go to line start" })
 vim.keymap.set({ "n", "v" }, "L", "$", { desc = "Go to line end" })
-
+vim.keymap.set({ "n" }, "<Esc><Esc>", ":<C-u>set nohlsearch<Return>", { desc = "set nohlsearch" })
 -- Load plugins
 require("lazy").setup("plugins", {
   change_detection = { notify = false },
