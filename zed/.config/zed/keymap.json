@@ -32,7 +32,7 @@
   {
     "context": "Editor && (vim_mode == normal || vim_mode == visual)",
     "bindings": {
-      "shift-h": "vim::StartOfLine",
+      "shift-h": "vim::FirstNonWhitespace",
       "shift-l": "vim::EndOfLine",
     },
   },
