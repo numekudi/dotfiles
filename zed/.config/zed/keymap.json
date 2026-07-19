@@ -24,8 +24,6 @@
       "space r n": "editor::Rename",
       "space c a": "editor::ToggleCodeActions",
       "space f": "editor::Format",
-      "d n": "editor::GoToHunk",
-      "d shift-n": "editor::GoToPreviousHunk",
       "ctrl-shift-c": "editor::Copy",
     },
   },
@@ -48,4 +46,16 @@
       "ctrl-shift-c": "collab_panel::ToggleFocus",
     },
   },
+  {
+    "context": "vim_operator == d",
+    "bindings": {
+      "n": "editor::GoToHunk"
+    }
+  },
+  {
+    "context": "vim_operator==d",
+    "bindings": {
+      "shift-n": "editor::GoToPreviousHunk"
+    }
+  }
 ]

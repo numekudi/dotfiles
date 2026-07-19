@@ -8,7 +8,7 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "icon_theme": "Zed (Default)",
-  "disable_ai": false,
+  "disable_ai": true,
   "cli_default_open_behavior": "new_window",
   "outline_panel": {
     "dock": "left",
@@ -47,7 +47,6 @@
   "buffer_line_height": "comfortable",
   "buffer_font_family": "Hack Nerd Font",
   "agent": {
-    "sidebar_side": "right",
     "dock": "right",
     "tool_permissions": {
       "default": "allow",
