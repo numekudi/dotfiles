@@ -1,0 +1,18 @@
+eval "$(starship init zsh)"
+alias l="ls"
+alias ll="ls -l"
+alias la="ls -a"
+alias lla="ls -la"
+export EDITOR=vim
+
+
+if [ -d /Volumes/SSD250/TMPDIR ]; then
+    export TMPDIR=/Volumes/SSD250/TMPDIR
+fi
+
+
+
+# .zshrc
+# if [ -f ~/.zsh_custom ]; then
+#    source ~/.zsh_custom.sh
+# fi
