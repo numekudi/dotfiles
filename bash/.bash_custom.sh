@@ -8,5 +8,5 @@ export EDITOR=vim
 
 # .bashrc
 # if [ -f ~/.bash_custom ]; then
-#    source ~/.bash_custom
+#    source ~/.bash_custom.sh
 # fi
