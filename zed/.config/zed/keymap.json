@@ -49,13 +49,8 @@
   {
     "context": "vim_operator == d",
     "bindings": {
-      "n": "editor::GoToHunk"
-    }
-  },
-  {
-    "context": "vim_operator==d",
-    "bindings": {
+      "n": "editor::GoToHunk",
       "shift-n": "editor::GoToPreviousHunk"
-    }
-  }
+    },
+  },
 ]
