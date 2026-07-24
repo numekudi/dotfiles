@@ -22,8 +22,9 @@ for package in "${packages[@]}"; do
 done
 
 
-# Create skills symlinks
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Create skills symlinks
 echo "Creating skills symlinks..."
 for tool in claude copilot gemini; do
     hidden_dir="$DOTFILES_DIR/$tool/.$tool"
@@ -32,5 +33,24 @@ for tool in claude copilot gemini; do
         echo "  $tool/.${tool}/skills -> agents/.agents/skills"
     fi
 done
+
+# Sync Zed config to Windows (WSL only)
+# On WSL, Zed runs as a native Windows app and reads its config from the Windows
+# AppData dir, which stow cannot symlink into. So we copy the files explicitly.
+if command -v cmd.exe >/dev/null 2>&1; then
+    echo "Syncing Zed config to Windows..."
+    zed_src="$DOTFILES_DIR/zed/.config/zed"
+    zed_files=(settings.json keymap.json)
+    win_user=$(cmd.exe /c "echo %USERNAME%" 2>/dev/null | tr -d '\r')
+    win_dst="/mnt/c/Users/$win_user/AppData/Roaming/Zed"
+    if [ -d "$win_dst" ]; then
+        for f in "${zed_files[@]}"; do
+            cp "$zed_src/$f" "$win_dst/$f"
+        done
+        echo "  Synced to $win_dst"
+    else
+        echo "  Windows Zed config dir not found: $win_dst (skipped)"
+    fi
+fi
 
 echo "Done! Dotfiles installed successfully."
