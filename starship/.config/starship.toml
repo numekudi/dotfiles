@@ -3,5 +3,5 @@ disabled = false
 format = '[$symbol($project)]($style) '
 
 [git_branch]
-truncation_length = 4
+truncation_length = 6
 format = '[$symbol($branch)]($style) '
