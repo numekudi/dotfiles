@@ -27,6 +27,10 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.clipboard = "unnamedplus"
 
+-- 検索: 既定では大文字小文字を無視し、検索語に大文字が含まれる場合のみ区別する
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
 -- Keymaps
 vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 vim.keymap.set({ "n", "i", "v" }, "<C-s>", "<cmd>w<CR><Esc>", { desc = "Save" })
