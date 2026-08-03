@@ -39,8 +39,14 @@ cd ~/dotfiles
 stow git
 stow zsh
 stow nvim
+stow vim
 stow tmux
 ```
+
+## vim について
+
+`vim` パッケージは nvim が使えない環境 (リモートサーバー、コンテナ、`sudo -e` など) 用。
+プラグインには依存せず、キーマップと主要オプションだけを `nvim` 側と揃えている。
 
 ## Uninstalling
 
