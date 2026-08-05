@@ -25,6 +25,8 @@
       "space c a": "editor::ToggleCodeActions",
       "space f": "editor::Format",
       "ctrl-shift-c": "editor::Copy",
+        "space g d": "git_panel::ToggleFocus",
+        "space e": "project_panel::ToggleFocus",
     },
   },
   {
@@ -50,7 +52,7 @@
     "context": "vim_operator == d",
     "bindings": {
       "n": "editor::GoToHunk",
-      "shift-n": "editor::GoToPreviousHunk"
+      "shift-n": "editor::GoToPreviousHunk",
     },
   },
 ]
