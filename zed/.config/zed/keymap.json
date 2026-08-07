@@ -27,6 +27,7 @@
       "ctrl-shift-c": "editor::Copy",
       "space g d": "git_panel::ToggleFocus",
       "space e": "project_panel::ToggleFocus",
+      "space space": "vim::HelixJumpToWord"
     },
   },
   {
