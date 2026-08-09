@@ -22,8 +22,6 @@ return {
         -- Navigation (Zed: ]c / [c)
         map("n", "]c", gs.next_hunk, "Next Change")
         map("n", "[c", gs.prev_hunk, "Prev Change")
-        map("n", "dn", gs.next_hunk, "Next Change")
-        map("n", "dN", gs.prev_hunk, "Prev Change")
         -- Expand diff hunk (Zed: do)
         map("n", "do", gs.preview_hunk, "Expand Diff Hunk")
 
@@ -64,8 +62,8 @@ return {
       -- 既定ではカラースキームの Diff 系にリンクされ色が意図とずれるため上書きする
       local function set_signs_colors()
         vim.api.nvim_set_hl(0, "GitSignsAdd", { fg = "#00b04f" })    -- Added: 緑
-        vim.api.nvim_set_hl(0, "GitSignsChange", { fg = "#e0af68" })  -- Modified: 黄
-        vim.api.nvim_set_hl(0, "GitSignsDelete", { fg = "#f7768e" })  -- Deleted: 赤
+        vim.api.nvim_set_hl(0, "GitSignsChange", { fg = "#e0af68" }) -- Modified: 黄
+        vim.api.nvim_set_hl(0, "GitSignsDelete", { fg = "#f7768e" }) -- Deleted: 赤
       end
 
       set_signs_colors()

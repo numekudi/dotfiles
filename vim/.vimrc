@@ -129,8 +129,6 @@ vnoremap H ^
 nnoremap L $
 vnoremap L $
 
-nnoremap <C-a> ggVG
-vnoremap <C-a> ggVG
 nnoremap <C-c> yy
 
 nnoremap <Esc><Esc> :<C-u>set nohlsearch<CR>
