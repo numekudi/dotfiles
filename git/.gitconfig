@@ -1,5 +1,8 @@
 [core]
 	editor = vim
+	# Use a single stow-managed hooks directory for every repository.
+	# Path-type value, so `~` is expanded by Git itself.
+	hooksPath = ~/.githooks
 [user]
 	email = numekudi@primitive-ojisan.com
 	name = n
