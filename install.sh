@@ -40,7 +40,7 @@ done
 if command -v cmd.exe >/dev/null 2>&1; then
     echo "Syncing Zed config to Windows..."
     zed_src="$DOTFILES_DIR/zed/.config/zed"
-    zed_files=(settings.json keymap.json)
+    zed_files=(keymap.json)
     win_user=$(cmd.exe /c "echo %USERNAME%" 2>/dev/null | tr -d '\r')
     win_dst="/mnt/c/Users/$win_user/AppData/Roaming/Zed"
     if [ -d "$win_dst" ]; then
