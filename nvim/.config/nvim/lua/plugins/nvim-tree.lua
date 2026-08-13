@@ -16,6 +16,9 @@ return {
         },
         filters = { dotfiles = false },
         git = { enable = true, ignore = false },
+        -- アクティブなバッファのファイルをツリー上でも展開・選択する
+        -- update_root = false: プロジェクト外のファイルを開いてもルートを動かさない
+        update_focused_file = { enable = true, update_root = false },
       })
 
       vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle File Explorer" })
