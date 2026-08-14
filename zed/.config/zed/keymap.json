@@ -43,4 +43,10 @@
       "ctrl-shift-c": "collab_panel::ToggleFocus",
     },
   },
+  {
+    "context": "Editor && vim_mode==normal",
+    "bindings": {
+      "space g h": "git::FileHistory"
+    }
+  }
 ]
