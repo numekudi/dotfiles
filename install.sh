@@ -14,7 +14,7 @@ fi
 # Install all dotfiles
 echo "Installing dotfiles..."
 
-packages=("git" "zsh" "nvim" "vim" "bash" "tmux" "copilot" "gemini" "starship" "zed" "claude" "codex")
+packages=("git" "zsh" "nvim" "vim" "bash" "tmux" "copilot" "gemini" "starship" "zed" "claude" "codex" "bin")
 
 for package in "${packages[@]}"; do
     echo "Installing $package"
