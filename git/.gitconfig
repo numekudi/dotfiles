@@ -27,3 +27,7 @@
 	unstage = restore --staged
 	# List configured aliases from the effective Git config.
 	aliases = config --get-regexp ^alias\\.
+
+
+[init]
+	defaultBranch = main
