@@ -93,6 +93,7 @@ $entries = @(
     # are linked rather than the whole directory.
     New-Entry claude   'claude/.claude/CLAUDE.md'       (Join-Path $UserHome '.claude\CLAUDE.md')     File
     New-Entry codex    'codex/.codex/AGENTS.md'         (Join-Path $UserHome '.codex\AGENTS.md')      File
+    New-Entry pi       'pi/.pi/agent/mcp.json'           (Join-Path $UserHome '.pi\agent\mcp.json')    File
 
     # Zed runs as a native Windows app and reads %APPDATA%\Zed.
     New-Entry zed      'zed/.config/zed/keymap.json'    (Join-Path $env:APPDATA 'Zed\keymap.json')    File
