@@ -98,6 +98,9 @@ $entries = @(
     # Zed runs as a native Windows app and reads %APPDATA%\Zed.
     New-Entry zed      'zed/.config/zed/keymap.json'    (Join-Path $env:APPDATA 'Zed\keymap.json')    File
 
+    # WezTerm on Windows also reads ~/.config/wezterm, so no AppData mapping is needed.
+    New-Entry wezterm  'wezterm/.config/wezterm'        (Join-Path $UserHome '.config\wezterm')      Dir
+
     # Sourced manually from Git Bash's .bashrc.
     New-Entry bash     'bash/.bash_custom.sh'           (Join-Path $UserHome '.bash_custom.sh')       File
 )

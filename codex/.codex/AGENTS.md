@@ -7,9 +7,7 @@ you should write code that is:
 
 ## coding styles
 
-- Write "why not" instead of "why" in the comments.
-- Use comments as documentation that stays close to the implementation and does not drift.
-- Comments should be concise and explain the implementation intent clearly to human readers.
+Do not include comments in your code, as they can sometimes serve as an excuse for poor implementation or negligence.
 
 ## do nots
 

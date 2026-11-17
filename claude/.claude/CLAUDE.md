@@ -7,9 +7,7 @@ you should write code that is:
 
 ## coding styles
 
-- Write "why not" instead of "why" in the comments.
-- Use comments as documentation that stays close to the implementation and does not drift.
-- Comments should be concise and explain the implementation intent clearly to human readers.
+Do not include comments in your code, as they can sometimes serve as an excuse for poor implementation or negligence.
 
 ### Do not write fallback codes (code-level only)
 This rule is about CODE, not product/content design.
@@ -17,4 +15,6 @@ Fallback code — silently swallowing errors, or leaving dead/legacy code paths 
 Things that should break due to changes ought to break (fail fast and loud). This also applies to type safety; do not rely on `any` or `unknown`.
 
 Scope note: this does NOT restrict content/data strategies. A fully-verified "evergreen"/generic default used as graceful degradation (lowering specificity, not faking data) is a legitimate design, not a forbidden fallback.
+
+
 
